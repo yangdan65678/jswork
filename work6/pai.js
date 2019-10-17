@@ -1,31 +1,32 @@
 function calculate(){
-    let num = document.getElementById('').value
+    let num = document.getElementById('text').value
     num = parseInt(num)&&Number(num)
     if(!isNaN(num)){
-        document.getElementById('').value=pi(num)
+        document.getElementById('pai').value=pi(num)
     }
 }
 function factorial(n){
     let sum =1
-    for(let i=1;i<=){
-
+    for(let i=1;i<=n;++i){
+        sum += arr[i][j]
     }
     return sum
 }
 function oddFactorial(n){
-    let sum=1
-    for(let i=1;i<=n;++i)
-    
+    let sum =1
+    for(let i=1;i<=n;++i){
+        sum += arr[i][j]
 }
 return sum
 }
 function pi(num){
     let sum =0
-    for(let i=0;i<=num;++i)
-    let dividend =factorial()
-    let divisor = oddFactorial()
+    for(let i=0;i<=num;++i){
+    let dividend =factorial(n)
+    let divisor = oddFactorial(n)
+    sum += arr[i][j]
 
 }
-return
+return sum + 2
 }
 calculate()
