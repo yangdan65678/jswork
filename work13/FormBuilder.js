@@ -52,5 +52,4 @@
     };
     window['FormBuilder'] = FormBuilder;
 }
-
 )(window);
