@@ -12,7 +12,7 @@ var lamp={
         next:'red'
     },
     green:{
-        obj:document.getElementById('red'),
+        obj:document.getElementById('green'),
         timeout:5,
         style:['gray','gray','green'],
         next:'yellow'
@@ -21,6 +21,12 @@ var lamp={
         this.red.obj.className =style[0];
         this.yellow.obj.className =style[1];
         this.green.obj.className =style[2];
+    }
+};
+var count ={
+    obj: document.getElementById('count'),
+    change: function(num){
+        this.obj.innerHTML =(num <10) ?('0' +num):num;
     }
 };
 var now = lamp.green;
