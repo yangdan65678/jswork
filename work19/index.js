@@ -11,13 +11,13 @@ function connect(){
         }
     }
     ws.onclose = function(){
-        document.getElementById('conn').disabled='';
-        document.getElementById('disconn').disabled='disable';
+        document.getElementById('conn').disable='';
+        document.getElementById('disconn').disable='disable';
     }
     ws.onmessage = function(event){
      let board = document.getElementById('board')
      let newmsg = document.createElement('div')
-     console.log(evnet.data)
+     console.log(event.data)
      newmsg.innerHTML= event.data
      board.appendChild(newmsg)
      board.scrollTop = board.scrollHeight;
